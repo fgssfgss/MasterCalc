@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
         OnClickListener lbtn_mplus = new OnClickListener() {
             @Override
             public void onClick(View v) {
-                memory.add(textViewIn.getText().toString());
+                memory.add(textViewIn.getText().toString().concat("=".concat(textViewOut.getText().toString())));
             }
         };
         OnClickListener lbtn_mminus = new OnClickListener() {
